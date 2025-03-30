@@ -18,10 +18,10 @@ def chat_response(user_in):
     user_in = user_in.lower()
 
     for keyword, answer in FAQ_QUESTIONS.items():
-        if keyword in user_in:  # Check if the keyword is part of the input
+        if keyword in user_in:  
             return answer
 
-    return "I'm sorry, I didn't understand that. Can you please rephrase?"
+    return "I'm sorry, I didn't understand that. Can you please ask again?"
 
 
 print("Chatbot: Hello! Ask me anything about our services.")
